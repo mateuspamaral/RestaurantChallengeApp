@@ -8,7 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AccentButton" parent="AppTheme">
+    <style name="ButtonTheme" parent="AppTheme">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AccentButton" parent="ButtonTheme">
         <item name="android:textColor">@color/text_color_for_colored_background</item>
         <item name="android:background">@color/colorAccent</item>
     </style>
