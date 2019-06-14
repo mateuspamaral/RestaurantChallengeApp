@@ -18,8 +18,8 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="RestaurantDescription" parent="AppTheme">
-        <item name="android:textSize">@dimen/restaurant_description</item>
+    <style name="RestaurantAddress" parent="AppTheme">
+        <item name="android:textSize">@dimen/restaurant_address</item>
         <item name="android:textColor">@color/default_text</item>
     </style>
 
