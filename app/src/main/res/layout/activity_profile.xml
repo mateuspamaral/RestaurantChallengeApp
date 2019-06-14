@@ -9,7 +9,7 @@
     app:layout_constraintStart_toStartOf="parent">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/registerTextInputLayoutName"
+        android:id="@+id/profileTextInputLayoutName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -25,13 +25,13 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/registerTextInputLayoutEmail"
+        android:id="@+id/profileTextInputLayoutEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerTextInputLayoutName">
+        app:layout_constraintTop_toBottomOf="@+id/profileTextInputLayoutName">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
@@ -41,13 +41,13 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/registerTextInputLayoutPassword"
+        android:id="@+id/profileTextInputLayoutPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerTextInputLayoutEmail">
+        app:layout_constraintTop_toBottomOf="@+id/profileTextInputLayoutEmail">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
@@ -57,13 +57,13 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/registerTextInputLayoutPasswordRepeat"
+        android:id="@+id/profileTextInputLayoutPasswordRepeat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerTextInputLayoutPassword">
+        app:layout_constraintTop_toBottomOf="@+id/profileTextInputLayoutPassword">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
@@ -78,7 +78,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="@string/register"
+        android:text="@string/save_profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

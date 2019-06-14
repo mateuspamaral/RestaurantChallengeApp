@@ -2,7 +2,10 @@
 <resources>
     <dimen name="form_activities_padding">16dp</dimen>
     <dimen name="restaurant_name">24sp</dimen>
-    <dimen name="restaurant_description">16sp</dimen>
+    <dimen name="default_text_size">16sp</dimen>
     <dimen name="default_recyclerview_padding">8dp</dimen>
     <dimen name="default_cardview_margin">8dp</dimen>
+    <dimen name="cardview_corner_radius">8dp</dimen>
+    <dimen name="default_detail_image">250dp</dimen>
+    <dimen name="textview_margin_start_end">16dp</dimen>
 </resources>

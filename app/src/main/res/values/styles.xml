@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -8,19 +8,49 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AccentButton" parent="AppTheme">
+    <style name="TransparentToolbar" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="titleTextColor">#01FFFFFF</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ButtonTheme" parent="AppTheme">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AccentButton" parent="ButtonTheme">
         <item name="android:textColor">@color/text_color_for_colored_background</item>
         <item name="android:background">@color/colorAccent</item>
     </style>
     
-    <style name="RestaurantName" parent="AppTheme">
+    <style name="RestaurantCardName" parent="AppTheme">
         <item name="android:textSize">@dimen/restaurant_name</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="RestaurantDescription" parent="AppTheme">
-        <item name="android:textSize">@dimen/restaurant_description</item>
+    <style name="RestaurantAddress" parent="AppTheme">
+        <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/default_text</item>
     </style>
 
+    <style name="DishCardName" parent="AppTheme">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/default_text</item>
+    </style>
+
+    <style name="TextOverlayingImage" parent="AppTheme">
+        <item name="android:textSize">@dimen/restaurant_name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_for_colored_background</item>
+    </style>
+
+    <style name="ActivityContentTitle" parent="RestaurantCardName">
+        <item name="android:textColor">@color/default_text</item>
+    </style>
+
+    <style name="ActivityContentText" parent="AppTheme">
+        <item name="android:textColor">@color/default_text</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
 </resources>
