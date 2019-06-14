@@ -3,6 +3,7 @@ package br.com.digitalhouse.restaurantchallengeapp.dish.view;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,5 +29,14 @@ public class DishDetailActivity extends AppCompatActivity {
                 dishDetailTextViewDescription.setText(dish.getDescription());
             }
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+        }
+        return true;
     }
 }
