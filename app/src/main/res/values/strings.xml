@@ -13,4 +13,6 @@
     <string name="restaurant_image">Restaurant Image</string>
     <string name="profile">Profile</string>
     <string name="save_profile">Save Profile</string>
+    <string name="dish_image">Dish Image</string>
+    <string name="main_dishes">Main Dishes</string>
 </resources>

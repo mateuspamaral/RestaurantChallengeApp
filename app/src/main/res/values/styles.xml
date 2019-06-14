@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -6,6 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TransparentToolbar" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="titleTextColor">#01FFFFFF</item>
+        <item name="windowActionBarOverlay">true</item>
     </style>
 
     <style name="ButtonTheme" parent="AppTheme">
@@ -17,14 +23,29 @@
         <item name="android:background">@color/colorAccent</item>
     </style>
     
-    <style name="RestaurantName" parent="AppTheme">
+    <style name="RestaurantName.Dark" parent="AppTheme">
         <item name="android:textSize">@dimen/restaurant_name</item>
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="RestaurantName.Light" parent="AppTheme">
+        <item name="android:textSize">@dimen/restaurant_name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_for_colored_background</item>
+    </style>
+
     <style name="RestaurantAddress" parent="AppTheme">
-        <item name="android:textSize">@dimen/restaurant_address</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/default_text</item>
     </style>
 
+    <style name="DishName.Dark" parent="AppTheme">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/default_text</item>
+    </style>
+
+    <style name="ActivityContentTitle" parent="RestaurantName.Dark">
+        <item name="android:textColor">@color/default_text</item>
+    </style>
 </resources>
