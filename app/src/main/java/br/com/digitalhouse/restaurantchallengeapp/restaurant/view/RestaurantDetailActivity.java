@@ -24,28 +24,21 @@ public class RestaurantDetailActivity extends AppCompatActivity implements Recyc
 
     private RecyclerView recyclerView;
     private RecyclerViewDishAdapter adapter;
-    private Restaurant restaurant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_detail);
 
-        getRestaurantIntent();
-
-        initDishRecycleView();
-
-        setViews();
-    }
-
-    private void initDishRecycleView() {
-        try{
+        try {
             recyclerView = findViewById(R.id.dishRecyclerView);
             recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-            adapter = new RecyclerViewDishAdapter(getDishes(Objects.requireNonNull(getRestaurantIntent(), "Restaurant must not be null")), this);
+            adapter = new RecyclerViewDishAdapter(getDishes(Objects.requireNonNull(getRestaurantIntent(), "Restaurant must not be null.")), this);
             recyclerView.setAdapter(adapter);
-        } catch (Exception e){
-            Toast.makeText(getApplicationContext(), "We are still working on this. Sorry for the inconvenience.", Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "We are still working on that back button. Sorry for the inconvenience", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, RestaurantActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -54,21 +47,17 @@ public class RestaurantDetailActivity extends AppCompatActivity implements Recyc
     }
 
     private Restaurant getRestaurantIntent() {
+        ImageView restaurantDetailImageViewImage = findViewById(R.id.restaurantDetailImageViewImage);
+        TextView restaurantDetailTextViewName = findViewById(R.id.restaurantDetailTextViewName);
         if (getIntent() != null && getIntent().getExtras() != null) {
-            restaurant = getIntent().getParcelableExtra("RESTAURANT");
+            Restaurant restaurant = getIntent().getParcelableExtra("RESTAURANT");
             if (restaurant != null) {
+                restaurantDetailImageViewImage.setImageDrawable(ContextCompat.getDrawable(restaurantDetailImageViewImage.getContext(), restaurant.getImage()));
+                restaurantDetailTextViewName.setText(restaurant.getName());
                 return restaurant;
             }
         }
         return null;
-    }
-
-    private void setViews() {
-        ImageView restaurantDetailImageViewImage = findViewById(R.id.restaurantDetailImageViewImage);
-        TextView restaurantDetailTextViewName = findViewById(R.id.restaurantDetailTextViewName);
-
-        restaurantDetailImageViewImage.setImageDrawable(ContextCompat.getDrawable(restaurantDetailImageViewImage.getContext(), restaurant.getImage()));
-        restaurantDetailTextViewName.setText(restaurant.getName());
     }
 
     @Override
