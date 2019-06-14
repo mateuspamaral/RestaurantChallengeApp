@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="text_color_for_colored_background">#FFFFFF</color>
+    <color name="dimmed">#C0CCDA</color>
+    <color name="facebook_blue">#577AC2</color>
+    <color name="default_text">#565F6B</color>
+</resources>
