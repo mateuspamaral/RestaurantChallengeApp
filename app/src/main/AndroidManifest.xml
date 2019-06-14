@@ -11,15 +11,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".dish.view.DishDetailActivity"
+            android:parentActivityName=".restaurant.view.RestaurantDetailActivity"
+            android:theme="@style/TransparentToolbar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".restaurant.view.RestaurantDetailActivity" />
+        </activity>
         <activity
             android:name=".profile.view.ProfileActivity"
             android:label="@string/profile"
             android:parentActivityName=".restaurant.view.RestaurantActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".restaurant.view.RestaurantActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".restaurant.view.RestaurantActivity" />
         </activity>
-        <activity android:name=".restaurant.view.RestaurantDetailActivity" />
+        <activity
+            android:name=".restaurant.view.RestaurantDetailActivity"
+            android:parentActivityName=".restaurant.view.RestaurantActivity"
+            android:theme="@style/TransparentToolbar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".restaurant.view.RestaurantActivity" />
+        </activity>
         <activity android:name=".restaurant.view.RestaurantActivity" />
         <activity
             android:name=".register.RegisterActivity"

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/default_cardview_margin"
     android:layout_marginBottom="@dimen/default_cardview_margin"
-    app:cardCornerRadius="8dp">
+    app:cardCornerRadius="@dimen/cardview_corner_radius">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,14 +19,14 @@
             android:layout_height="150dp"
             android:contentDescription="@string/restaurant_image"
             android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/restaurant1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/restaurantTextViewName"
-            style="@style/RestaurantName"
+            style="@style/RestaurantName.Dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
