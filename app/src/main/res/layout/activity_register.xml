@@ -9,7 +9,7 @@
     app:layout_constraintStart_toStartOf="parent">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/registerTextInputLayoutName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -25,13 +25,13 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/loginTextInputLayoutEmail"
+        android:id="@+id/registerTextInputLayoutEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/registerTextInputLayoutName">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
@@ -41,13 +41,13 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/loginTextInputLayoutPassword"
+        android:id="@+id/registerTextInputLayoutPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTextInputLayoutEmail">
+        app:layout_constraintTop_toBottomOf="@+id/registerTextInputLayoutEmail">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
@@ -57,12 +57,13 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
+        android:id="@+id/registerTextInputLayoutPasswordRepeat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTextInputLayoutPassword">
+        app:layout_constraintTop_toBottomOf="@+id/registerTextInputLayoutPassword">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
