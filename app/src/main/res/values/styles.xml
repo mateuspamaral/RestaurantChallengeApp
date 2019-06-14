@@ -23,15 +23,9 @@
         <item name="android:background">@color/colorAccent</item>
     </style>
     
-    <style name="RestaurantName.Dark" parent="AppTheme">
+    <style name="RestaurantCardName" parent="AppTheme">
         <item name="android:textSize">@dimen/restaurant_name</item>
         <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="RestaurantName.Light" parent="AppTheme">
-        <item name="android:textSize">@dimen/restaurant_name</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/text_color_for_colored_background</item>
     </style>
 
     <style name="RestaurantAddress" parent="AppTheme">
@@ -39,13 +33,24 @@
         <item name="android:textColor">@color/default_text</item>
     </style>
 
-    <style name="DishName.Dark" parent="AppTheme">
+    <style name="DishCardName" parent="AppTheme">
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/default_text</item>
     </style>
 
-    <style name="ActivityContentTitle" parent="RestaurantName.Dark">
+    <style name="TextOverlayingImage" parent="AppTheme">
+        <item name="android:textSize">@dimen/restaurant_name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_for_colored_background</item>
+    </style>
+
+    <style name="ActivityContentTitle" parent="RestaurantCardName">
         <item name="android:textColor">@color/default_text</item>
+    </style>
+
+    <style name="ActivityContentText" parent="AppTheme">
+        <item name="android:textColor">@color/default_text</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
     </style>
 </resources>

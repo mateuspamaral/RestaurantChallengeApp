@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".dish.view.DishDetailActivity">
 
+
+    <ImageView
+        android:id="@+id/dishDetailImageViewImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/default_detail_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dish10" />
+
+    <TextView
+        android:id="@+id/dishDetailTextViewName"
+        style="@style/TextOverlayingImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/textview_margin_start_end"
+        android:layout_marginEnd="@dimen/textview_margin_start_end"
+        android:layout_marginBottom="8dp"
+        android:text="Dish's Name"
+        app:layout_constraintBottom_toBottomOf="@+id/dishDetailImageViewImage"
+        app:layout_constraintEnd_toEndOf="@+id/dishDetailImageViewImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dishDetailImageViewImage" />
+
+    <TextView
+        android:id="@+id/dishDetailTextViewDescription"
+        style="@style/ActivityContentText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/textview_margin_start_end"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/textview_margin_start_end"
+        android:text="Aqui teremos uma descriação do prato de forma justificada e em cor de tom cinza."
+        android:justificationMode="inter_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishDetailImageViewImage" />
 </android.support.constraint.ConstraintLayout>

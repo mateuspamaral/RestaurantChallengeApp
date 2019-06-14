@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/restaurantDetailImageViewImage"
         android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/default_detail_image"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,23 +19,28 @@
 
     <TextView
         android:id="@+id/restaurantDetailTextViewName"
-        style="@style/RestaurantName.Light"
-        android:layout_width="wrap_content"
+        style="@style/TextOverlayingImage"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/textview_margin_start_end"
+        android:layout_marginEnd="@dimen/textview_margin_start_end"
         android:layout_marginBottom="8dp"
         android:text="Restaurant's Name"
         app:layout_constraintBottom_toBottomOf="@+id/restaurantDetailImageViewImage"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantDetailImageViewImage"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/restaurantDetailImageViewImage" />
 
     <TextView
         android:id="@+id/restaurantDetailTextViewContentTitle"
         style="@style/ActivityContentTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/textview_margin_start_end"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/textview_margin_start_end"
         android:text="@string/main_dishes"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/restaurantDetailImageViewImage" />
 
@@ -45,10 +50,10 @@
         android:layout_height="0dp"
         android:padding="@dimen/default_recyclerview_padding"
         app:layoutManager="android.support.v7.widget.GridLayoutManager"
-        app:spanCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/restaurantDetailTextViewContentTitle"
+        app:spanCount="2"
         tools:listitem="@layout/dish_recyclerview_item" />
 </android.support.constraint.ConstraintLayout>
