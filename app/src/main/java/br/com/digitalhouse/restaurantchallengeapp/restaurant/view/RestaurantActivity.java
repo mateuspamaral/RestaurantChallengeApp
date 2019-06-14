@@ -53,7 +53,7 @@ public class RestaurantActivity extends AppCompatActivity implements RecyclerVie
         dishes.add(new Dish("Red Fruits Pie", "Come, só come, nem pensa muito não, só não olha o preço, porque é caro.", R.drawable.dish5));
         dishes.add(new Dish("Gelado`s", "A chapa não estava quente ainda, então pegamos tudo que tinha na geladeira, cortamos em tiras finas, como um sashimi e deixamos bonito com molho e ervas finas. Ótimo para dias quentes...", R.drawable.dish6));
         dishes.add(new Dish("Combo da Hora", "Eu tenho fome, você também? Então pede que eu agarantio.", R.drawable.dish7));
-        dishes.add(new Dish("Bolo no Pote", "Ah o bolo no pote, sim ele mesmo. Só está no pote porque fica defícil de pegar o último pedaço somente com a colher, no pote podemos usar as paredes para encher a colher sem problemas!", R.drawable.dish8));
+        dishes.add(new Dish("Bolo no Pote", "Ah o bolo no pote, sim ele mesmo. Só está no pote porque fica difícil de pegar o último pedaço somente com a colher, no pote podemos usar as paredes para encher a colher sem problemas!", R.drawable.dish8));
         dishes.add(new Dish("Misto com zoiudo", "Nada demais, só um misto com ovo em cima.", R.drawable.dish9));
         dishes.add(new Dish("Cordeiro Viking", "Deu fome na hora que eu peguei esta foto viu, me imaginei comendo com a mão e lambuznado inteiro. Partiu saquear depois deste rango?", R.drawable.dish10));
         return dishes;
